@@ -163,18 +163,19 @@
   font-size: 3em;
 }
 .circle-count {
-  display: flex;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  justify-content: center;
-  background:red;
-  color:white;
-  align-items: center;
-  box-shadow: 0 1px 10px rgba(255, 0, 0, 0.46);
-  margin-right: 60px;
-  margin-bottom:16px;
+    display: flex;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    width: 21px;
+    height: 21px;
+    justify-content: center;
+    background: red;
+    color: white;
+    align-items: center;
+    box-shadow: 0 1px 10px rgba(255, 0, 0, 0.46);
+    margin-right: 95px;
+    /* margin-bottom: 0px; */
+    margin-top: 0px;
 }
 </style>
 <!-- End Modal -->
@@ -184,17 +185,17 @@
 			<div class="row">
 				<!-- LOGO của trang web -->
 				<div class="col-md-3 top-info text-left mt-lg-4">
-					<img width="40%" height="30%" src="{!! asset('user\images\logo.png')!!}" class="img-fluid" alt="" >
+					<img width="60%" height="60%" style="margin-top: -100px;" src="{!! asset('user\images\logo-2.png')!!}" class="img-fluid" alt="" >
 				</div>
 				<!-- BANNER của trang web -->
 				<div class="col-md-6 logo-w3layouts top-info text-center">
-					<h1 class="logo-w3layouts">
+					<h1 class="logo-w3layouts" >
 						<a class="navbar-brand" href="{{ url('/') }}">
 							MyBook </a>
 					</h1>
 				</div>
 				<!--Cá nhân -->
-				<div class="col-md-3 text-right mt-lg-4">
+				<div class="col-md-3 text-right mt-lg-3">
         <ul class="cart-inner-info">
             <!-- Yêu thích -->
             @if (session()->has('infoUser') != null)
